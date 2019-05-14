@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="314" height="65" viewBox="0 0 314 65">
+  <defs>
+    <text id="logo-b" fill="#FFF" font-family="Bitter-Bold, Bitter" font-size="49.192" font-weight="bold">
+      <tspan x="1.341" y="54">ZOOVIEW.tv</tspan>
+    </text>
+    <filter id="logo-a" width="104.6%" height="120.9%" x="-2.6%" y="-7.5%" filterUnits="objectBoundingBox">
+      <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.304086538 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(3 -16)">
+    <g fill="#FFF">
+      <use filter="url(#logo-a)" xlink:href="#logo-b"/>
+      <use xlink:href="#logo-b"/>
+    </g>
+    <text font-family="DIN-Bold" font-size="15.4" font-weight="bold">
+      <tspan x="0" y="77" fill="#CC8439">Milwaukee County Zoo</tspan> <tspan x="156.849" y="77" fill="#FFF" font-family="DINMittelschrift" font-weight="normal"> </tspan> <tspan x="182.721" y="77" fill="#C88137">Zoological Society</tspan>
+    </text>
+    <path fill="#FFF" fill-rule="nonzero" d="M173.938979,69.5479397 C175.153269,70.5843549 175.217093,72.4444714 174.128467,73.5678792 L170.386972,77.4311866 C170.145273,77.6806272 169.752758,77.6806272 169.51106,77.4311866 L165.769565,73.5678792 C164.682884,72.4444714 164.746707,70.5843549 165.960998,69.5479397 C167.020601,68.6449687 168.598402,68.8073789 169.569067,69.8109192 L169.949988,70.203434 L170.330909,69.8109192 C171.303501,68.8073789 172.879376,68.6449687 173.938979,69.5479397 Z"/>
+  </g>
+</svg>

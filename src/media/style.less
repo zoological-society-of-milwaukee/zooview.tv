@@ -1,0 +1,63 @@
+// out: ./style.css, sourcemap: false, compress: true
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Bold.woff2') format('woff2'),
+        url('./fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Regular.woff2') format('woff2'),
+        url('./fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin-top: 30px;
+  background: #000;
+  background-image: url('./images/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 70%;
+  color: '#fff';
+}
+
+.center {
+  text-align: center;
+}
+
+hr {
+  border-color: red;
+}
+
+.dropdown-menu {
+  background: #191919;
+}
+.dropdown-item {
+  color: #c68138;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #424242;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+  p {
+    color: #a1a1a1;
+  }
+}
+
+.dropdown-item:active {
+  background: #bd2525;
+}
+.dropdown-item:hover {
+  background: #242424;
+}
