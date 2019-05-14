@@ -1,8 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
+import Overdrive from 'react-overdrive';
 
-import { HistoryBackButton } from '../micro';
+import { HistoryBackButton, SlideCard } from '../micro';
 import { streams }  from '../../db';
 
 const ExhibitDetailPage = ({ match }) => {
@@ -38,19 +39,21 @@ const ExhibitDetailPage = ({ match }) => {
             </Col>
             <Col>
 
-              <div
-                style={{
-                  margin: '10px 0 10px 20px',
-                  float: 'right',
-                  display: 'inline-block',
-                  backgroundImage: `url(${i.image})`,
-                  backgroundPosition: 'center center',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundSize: '120%',
-                  width: 84,
-                  height: 84,
-                }}
-              />
+              <Overdrive id={`overdrive-${i.slug}`}>
+                <div
+                  style={{
+                    margin: '10px 0 10px 20px',
+                    float: 'right',
+                    display: 'inline-block',
+                    backgroundImage: `url(${i.image})`,
+                    backgroundPosition: 'center center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: '120%',
+                    width: 84,
+                    height: 84,
+                  }}
+                />
+              </Overdrive>
 
               <h2>{i.name}</h2>
 
@@ -58,13 +61,24 @@ const ExhibitDetailPage = ({ match }) => {
                 <p style={{ fontSize: '0.88rem', color: '#c7c7c7' }}>{i.description}</p>
               }
 
+              <Button color="success" large="true" block>Support this Exhibit</Button>
+
             </Col>
           </Row>
         </div>
 
       </Container>
 
+
+      <div className="hwrapper" style={{ textAlign: 'center' }}>
+          <div className="hwrapper-inner onboard-intro" style={{ paddingLeft: 15 }}>
+            {streams.map(i => <SlideCard key={i.id} slide={i} />)}
+          </div>
+        </div>
+
+
     </>
+
   );
 }
 export default withRouter(ExhibitDetailPage);

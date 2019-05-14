@@ -1,26 +1,30 @@
 import React from 'react';
-
-import { isOdd } from '../../utils';
+import { Link } from 'react-router-dom';
+import Overdrive from 'react-overdrive';
 
 const SlideCard = props => {
-  const { name, id, image, caption } = props.slide;
+  const { name, id, image, slug } = props.slide;
   return (
-    <div
-      title={name}
-      style={{
-        display: 'inline-block',
-        width: 334,
-        height: 275,
-        margin: '0 5px 0',
-        backgroundImage: (isOdd(id) === 0)
-          ? 'linear-gradient(-46deg, #171D70 0%, #1C65A0 100%)'
-          : 'linear-gradient(161deg, #FFC216 0%, #CEA01C 97%)',
-        boxShadow: '0 8px 30px 1px rgba(0,0,0,0.23)',
-        borderRadius: 5
-      }}
-    >
-      <img src={image} alt="" style={{ marginTop: 40, marginBottom: 50 }} />
-      <p className="caption">{caption}</p>
+    <div style={{ display: 'inline-block', minWidth: 120, marginRight: 10 }}>
+      <Overdrive id={`overdrive-${slug}`}>
+        <Link to={`/exhibits/${slug}`}>
+          <div
+            style={{
+              display: 'inline-block',
+              margin: '15px 5px 0 15px',
+              maxWidth: 120,
+              width: '100%',
+              height: 180,
+              backgroundImage: `url(${image})`,
+              backgroundPosition: 'top center',
+              backgroundRepeat: 'no-repeat',
+              borderRadius: 13
+            }}
+          >
+            <h2>{name}</h2>
+          </div>
+        </Link>
+      </Overdrive>
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Footer = () => (
   <footer>
     <Container>
       <Row>
-        <Col>
+        <Col sm="12" md="6">
           <h4>LIVE STREAMING HELPS OUR ANIMALS</h4>
           <p>The Zoo’s many snow-loving animals such as the snow leopards, polar bear, Snow Lilly, as well as the caribou and elk herds are most active during the colder temperatures. Feel the crunch of snow beneath your feet and the fresh snow on your cheeks when you visit the Zoo’s North American river otters in their year-round outdoor exhibit, Otter Passage.</p>
         </Col>
@@ -27,7 +27,7 @@ const Footer = () => (
     <Container style={{  marginTop: 50 }}>
       <Row>
         <Col>
-          <img src={imgFooterPartners} alt=""  style={{ marginBottom: 80 }}/>
+          <img src={imgFooterPartners} alt=""  style={{ width: '100%', marginBottom: 80 }}/>
 
           <p style={{ textAlign: 'center', marginBottom: 20 }}>
             © 2019 Zooview.tv. All Rights Reserved.
