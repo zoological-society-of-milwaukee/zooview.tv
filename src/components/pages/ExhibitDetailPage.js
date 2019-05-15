@@ -55,7 +55,7 @@ const ExhibitDetailPage = ({ match }) => {
                 <p style={{ fontSize: '0.88rem', color: '#c7c7c7' }}>{description}</p>
               }
 
-              <Button color="success" large="true" block>Support this Exhibit</Button>
+              <Button color="success" large="true" block>Sponsor Exhibit</Button>
 
             </Col>
           </Row>
