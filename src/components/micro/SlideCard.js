@@ -8,18 +8,22 @@ const SlideCard = props => {
       <Link to={`/exhibits/${slug}`}>
         <div
           style={{
+            position: 'relative',
             display: 'inline-block',
             margin: '15px 5px 0 15px',
             maxWidth: 120,
             width: '100%',
             height: 180,
+            padding: '10px 5px 0px 10px',
+            textAlign: 'left',
             backgroundImage: `url(${image})`,
             backgroundPosition: 'top center',
             backgroundRepeat: 'no-repeat',
             borderRadius: 13
           }}
         >
-          <h2 style={{ fontSize: '1rem' }}>
+          <div style={{ positon: 'relative', top: 10, left: 10, fontSize: '0.8rem', color: '#83e712' }}>LIVE</div>
+          <h2 style={{ position: 'relative', fontSize: '1rem' }}>
             {name}
           </h2>
         </div>
