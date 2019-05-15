@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Overdrive from 'react-overdrive';
 
 import { streams } from '../../db';
@@ -12,24 +13,26 @@ const Frontpage = () => {
 
         {streams.map(i => (
           <Col key={i.id} xs="6" md="auto" className="center">
+
           <Overdrive id={`overdrive-${i.slug}`}>
             <Link to={`/exhibits/${i.slug}`}>
                 <div
+                  className="frontpage-card"
                   style={{
-                    margin: '15px 5px',
-                    maxWidth: 220,
-                    minWidth: 100,
-                    width: '100%',
-                    height: 332,
                     backgroundImage: `url(${i.image})`,
-                    backgroundPosition: 'top center',
-                    backgroundRepeat: 'no-repeat',
-                    borderRadius: 13,
-                    boxShadow: '0 2px 29px 0 rgba(0,0,0,0.32)'
+                    backgroundColor: i.themeColor
                   }}
-                />
+                >
+                  <div style={{ textShadow: '1px 1px 0px rgba(0,0,0,0.4)', positon: 'relative', top: 10, left: 10, fontSize: '0.78rem', color: '#03b830', fontWeight: 'bold' }}>
+                    <FontAwesomeIcon icon="circle" style={{ fontSize: '70%', marginRight: 3 }} />
+                    {' '}
+                    LIVE
+                  </div>
+                  <h2>{i.name}</h2>
+                </div>
               </Link>
             </Overdrive>
+
           </Col>
         ))}
 

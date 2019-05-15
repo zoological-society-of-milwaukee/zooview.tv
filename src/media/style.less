@@ -15,13 +15,35 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Bitter-Bold';
+    src: url('./fonts/bitter-bold-webfont.woff2') format('woff2'),
+         url('./fonts/bitter-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bitter-Italic';
+    src: url('./fonts/bitter-italic-webfont.woff2') format('woff2'),
+         url('./fonts/bitter-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bitter-Regular';
+    src: url('./fonts/bitter-regular-webfont.woff2') format('woff2'),
+         url('./fonts/bitter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-  margin-top: 30px;
+  margin-top: 50px;
   background: #000;
   background-image: url('./images/bg-1.jpg');
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 70%;
+  background-size: 100%;
   color: '#fff';
 }
 
@@ -44,8 +66,26 @@ hr {
   border-top: 1px solid #424242;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Bitter-Bold', serif;
+  text-transform: uppercase;
+}
 h1,h2,h3,h4,h5,h6,p {
   color: white;
+}
+
+.logo {
+  width: 220px;
+  position: relative;
+  top: 3px;
+}
+
+.header-partners {
+  margin: 20px auto 10px auto;
+  display: block;
+  img {
+    width: 260px;
+  }
 }
 
 footer {
@@ -62,13 +102,154 @@ footer {
   background: #242424;
 }
 
+
 .hwrapper {
-  -webkit-overflow-scrolling: touch;
  overflow-y: hidden;
  overflow-x: scroll;
- padding: 25px 0px 35px 0;
+ padding: 20px;
+ text-align: center;
+ -webkit-overflow-scrolling: touch;
  .hwrapper-inner {
+   padding-left: 15px;
    -webkit-overflow-scrolling: touch;
    white-space: nowrap;
  }
 }
+
+
+.dark-hero {
+  padding: 15px;
+  background: rgba(14, 14, 14, 0.95);
+  box-shadow: 0 -6px 24px 0 rgba(0,0,0,0.29);
+  border-radius: 13px;
+  // filter:blur(4px);
+  // -o-filter:blur(4px);
+  // -ms-filter:blur(4px);
+  // -moz-filter:blur(4px);
+  // -webkit-filter:blur(4px);
+}
+
+.frontpage-card {
+  margin: 10px 0;
+  max-width: 220px;
+  min-width: 100px;
+  width: 100%;
+  text-align: left;
+  height: 200px;
+  padding: 10px 0 0 10px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  box-shadow: 0 2px 29px 0 rgba(0,0,0,0.32);
+  h2 {
+    position: relative;
+    font-family: 'Bitter-Bold';
+    font-size: 18px;
+    color: #F3F3F3;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+}
+
+.ab-slidecard {
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+  margin-right: 10px;
+  display: inline-block;
+  height: 100px;
+  width: 220px;
+  text-align: left;
+  border: 1px solid #545454;
+
+  padding: 10px 5px 0px 10px;
+
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 13px;
+  font-size: 0.78rem;
+  color: #03b830;
+  font-weight: bold;
+  .fa-circle {
+    font-size: 70%;
+  }
+  h4 {
+    white-space: wrap;
+    position: relative;
+    font-size: 16px;
+    color: #F3F3F3;
+    text-shadow: -1px 2px 0 rgba(0,0,0,0.50);
+  }
+}
+a.active .ab-slidecard {
+  border: 1px solid #987054;
+  box-shadow: 0px 0px 20px 0px rgba(255,105,5,0.5);
+}
+
+
+
+
+
+
+
+/*
+ * MEDIA QUERIES
+ * Everything above this is for mobile (mobile-first)
+ */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+  body {
+    background-position: center -100px;
+    background-size: contain;
+  }
+
+  .logo {
+    width: 320px;
+    position: relative;
+    top: -20px;
+  }
+
+  .frontpage-card {
+    margin: 10px 0;
+    height: 320px;
+    width: 300px;
+
+  }
+
+  .ab-slidecard {
+    height: 320px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+  .header-partners {
+    position: absolute;
+    top: -30px;
+    right: 129px;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+
+/*
+ * CUSTOM MEDIA QUERIES
+ */
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+
+}
+

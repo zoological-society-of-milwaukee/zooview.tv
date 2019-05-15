@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faCircle } from '@fortawesome/free-regular-svg-icons';
+// import { fab } from '@fortawesome/free-brands-svg-icons';
+// import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import {
   faStar,
   faChevronLeft,
@@ -9,6 +9,7 @@ import {
   faArrowLeft,
   faTrash,
   faPlus,
+  faCircle,
   faPrint,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,7 +20,7 @@ import './style.css';
 // Fonts included here are then available globally
 // See: https://goo.gl/doUeQS
 library.add(
-  fab,
+  // fab,
   // Note: You can import individual icons (subsetting).
   // Only these icons will be included in build.
   faCircle,

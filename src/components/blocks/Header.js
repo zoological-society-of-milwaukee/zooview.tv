@@ -4,6 +4,7 @@ import { Container, Collapse, Navbar, NavbarToggler } from 'reactstrap';
 
 import { MainMenu } from '../micro';
 import { ReactComponent as HeaderLogo } from '../../media/images/logo.svg';
+import imgHeaderPartners from '../../media/images/header-partners.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +16,14 @@ const Header = () => {
       <Navbar dark expand="md">
 
         <Link to="/">
-          <HeaderLogo style={{ width: 220, position: 'relative', top: 3 }} />
+          <HeaderLogo className="logo" />
         </Link>
 
-        <NavbarToggler onClick={toggle} style={{ float: 'right' }}/>
+        <NavbarToggler onClick={toggle} />
+
+        <div className="center header-partners">
+          <img src={imgHeaderPartners} alt="" />
+        </div>
 
         <Collapse isOpen={isOpen} navbar>
           <MainMenu />
