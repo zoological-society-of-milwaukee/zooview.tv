@@ -20,11 +20,11 @@ export const streams = [
     status: 'live',
     themeColor: '#089882'
   },
-  { id: 2, slug: 'amur-tiger', name: 'Amur Tiger', description: commonDesc, image: imgAmurTiger, streamUrl: 'https://www.youtube.com/embed/drY9IEazqVs', status: 'live', themeColor: '#709239' },
+  { id: 2, slug: 'amur-tiger', name: 'Amur Tiger', description: commonDesc, image: imgAmurTiger, streamUrl: 'https://www.youtube.com/embed/h2luGHyKcOc', status: 'live', themeColor: '#709239' },
   { id: 3, slug: 'humboldt-penguin', name: 'Humboldt Penguins', description: commonDesc, image: imgHumboldtPenguins, streamUrl: 'https://www.youtube.com/embed/i3sRj3Ya4nk', status: 'live', themeColor: '#495c86' },
   { id: 4, slug: 'hyenas', name: 'Hyenas', description: commonDesc, image: imgHyenas, streamUrl: 'https://www.youtube.com/embed/kgkB57FG71U', status: 'live', themeColor: '#006f66' },
   { id: 5, slug: 'jaguar', name: 'Jaguars', description: commonDesc, image: imgJaguar, streamUrl: 'https://www.youtube.com/embed/bF8Nc3ukP_0', status: 'live', themeColor: '#c7181e' },
-  { id: 6, slug: 'lake-wisconsin', name: 'Lake Wisconsin', description: commonDesc, image: imgLakeWisconsin, streamUrl: 'https://www.youtube.com/embed/kgkB57FG71Ulive', status: 'live', themeColor: '#844070' },
-  { id: 7, slug: 'orangutans', name: 'Orangutans', description: commonDesc, image: imgOrangutans, streamUrl: 'https://www.youtube.com/embed/kgkB57FG71U', status: 'live', themeColor: '#9e700d' },
-  { id: 8, slug: 'polar-bear', name: 'Polar Bear', description: commonDesc, image: imgPolarBear, streamUrl: 'https://www.youtube.com/embed/kgkB57FG71U', status: 'live', themeColor: '#336699' }
+  { id: 6, slug: 'lake-wisconsin', name: 'Lake Wisconsin', description: commonDesc, image: imgLakeWisconsin, streamUrl: 'https://www.youtube.com/embed/mGg_g7gYbEc', status: 'live', themeColor: '#844070' },
+  { id: 7, slug: 'orangutans', name: 'Orangutans', description: commonDesc, image: imgOrangutans, streamUrl: 'https://www.youtube.com/embed/5rmDV0MzKS0', status: 'live', themeColor: '#9e700d' },
+  { id: 8, slug: 'polar-bear', name: 'Polar Bear', description: commonDesc, image: imgPolarBear, streamUrl: 'https://www.youtube.com/embed/wGbGno2ICCc', status: 'live', themeColor: '#336699' }
 ];
