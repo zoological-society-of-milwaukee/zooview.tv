@@ -18,6 +18,13 @@
     "react-scripts": "2.1.8",
     "reactstrap": "^8.0.0"
   },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "puppeteerExecutablePath": "/opt/google/chrome/google-chrome"
+  },
   "devDependencies": {
     "react-snap": "^1.23.0"
   },
