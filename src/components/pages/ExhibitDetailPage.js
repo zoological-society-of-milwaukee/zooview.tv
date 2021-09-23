@@ -22,15 +22,7 @@ const ExhibitDetailPage = ({ match }) => {
 
           <Row>
             <Col sm="12" md="8">
-              <div className="embed-responsive embed-responsive-16by9">
-                {/* <iframe
-                  title={`Live stream of the ${name} exhibit`}
-                  className="embed-responsive-item"
-                  src={streamUrl}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                /> */}
+              <div className="embed-responsive embed-responsive-16by9"> 
                       <iframe src =  {videoUrl} 
                       title={`Live stream of the ${name} exhibit`}
                       name = "ls-player" 
@@ -39,8 +31,7 @@ const ExhibitDetailPage = ({ match }) => {
                       frameBorder = "0"
                       webkitallowfullscreen = "true"
                       mozallowfullscreen = "true"
-                      allowFullScreen   > </iframe>
-
+                      allowFullScreen   > </iframe> 
               </div>
             </Col>
             <Col>
