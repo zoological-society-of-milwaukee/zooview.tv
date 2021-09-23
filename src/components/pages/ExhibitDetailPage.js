@@ -10,7 +10,7 @@ const ExhibitDetailPage = ({ match }) => {
   const i = streams.find(i => i.slug === match.params.slug);
   const { name, image, slug, streamUrl, description } = i;
   const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch="+streamUrl; 
-  return (
+  return ( 
     <>
       <Container>
 
