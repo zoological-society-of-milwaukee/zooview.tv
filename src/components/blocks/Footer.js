@@ -27,10 +27,9 @@ const Footer = () => (
     <Container style={{  marginTop: 50 }}>
       <Row>
         <Col>
-          <img src={imgFooterPartners} alt=""  style={{ width: '100%', marginBottom: 80 }}/>
 
           <p style={{ textAlign: 'center', marginBottom: 20 }}>
-            © 2019 Zooview.tv. All Rights Reserved.
+            © 2021 Zoological Society of Milwaukee, Zooview.tv. All Rights Reserved.
           </p>
 
         </Col>
