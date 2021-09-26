@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import { Header, Footer } from './blocks';
 import {
@@ -15,6 +15,9 @@ import '../media';
 const App = (props) => {
   return (
     <>
+    <BrowserRouter>
+
+
       <Header {...props} />
 
       <Switch>
@@ -26,6 +29,7 @@ const App = (props) => {
       </Switch>
 
       <Footer />
+      </BrowserRouter>
     </>
   );
 }

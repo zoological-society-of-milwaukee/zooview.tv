@@ -7,7 +7,8 @@ import { HistoryBackButton, SlideCard } from '../micro';
 import { streams }  from '../../db';
 
 const ExhibitDetailPage = ({ match }) => {
-  const i = streams.find(i => i.slug === match.params.slug);
+  // const i = streams.find(i => i.slug === match.params.slug);
+  const i = 0;
   const { name, image, slug, streamUrl, description } = i;
   const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch="+streamUrl; 
   return ( 
@@ -76,4 +77,4 @@ const ExhibitDetailPage = ({ match }) => {
 
   );
 }
-export default withRouter(ExhibitDetailPage);
+export default ExhibitDetailPage;

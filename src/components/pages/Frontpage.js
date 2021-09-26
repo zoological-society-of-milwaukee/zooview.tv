@@ -40,4 +40,4 @@ const Frontpage = () => {
     </Container>
   );
 }
-export default withRouter(Frontpage);
+export default Frontpage;

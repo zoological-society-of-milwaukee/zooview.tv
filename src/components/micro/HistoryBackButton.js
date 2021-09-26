@@ -6,7 +6,7 @@ const HistoryBackButton = ({ history }) => {
   return (
     <button
       type="button"
-      onClick={history.goBack}
+      // onClick={history.goBack}
       style={{
         background: 'none',
         color: '#fff',
@@ -21,4 +21,4 @@ const HistoryBackButton = ({ history }) => {
     </button>
   );
 }
-export default withRouter(HistoryBackButton);
+export default   HistoryBackButton ;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button, FormGroup, Input } from 'reactstrap';
 
-import imgFooterPartners from '../../media/images/footer-sponsors.png';
+// import imgFooterPartners from '../../media/images/footer-sponsors.png';
 
 const Footer = () => (
   <footer>

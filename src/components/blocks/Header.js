@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink , useHistory} from 'react-router-dom';
 import { Container, Collapse, Navbar, NavbarToggler } from 'reactstrap';
 
 import { MainMenu } from '../micro';
 import { ReactComponent as HeaderLogo } from '../../media/images/logo.svg';
 import imgHeaderPartners from '../../media/images/header-partners.png';
+ 
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   function toggle() {
     isOpen ? setIsOpen(false) : setIsOpen(true)
   }
+ let history = useHistory();
+ console.log(history);
   return (
     <Container>
       <Navbar dark expand="md">
 
-        <Link to="/">
+        <NavLink to="/">
           <HeaderLogo className="logo" />
-        </Link>
+        </NavLink>
 
         <NavbarToggler onClick={toggle} />
 
