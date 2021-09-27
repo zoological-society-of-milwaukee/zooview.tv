@@ -105,7 +105,7 @@ footer {
 
 .hwrapper {
  overflow-y: hidden;
- overflow-x: scroll;
+ overflow-x: auto;
  padding: 20px;
  text-align: center;
  -webkit-overflow-scrolling: touch;
@@ -114,6 +114,20 @@ footer {
    -webkit-overflow-scrolling: touch;
    white-space: nowrap;
  }
+}
+.hwrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.hwrapper::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.hwrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #acf599, #5bfc8b);
 }
 
 
@@ -190,14 +204,12 @@ a:hover {
 
 
 
-
-
 /*
  * MEDIA QUERIES
  * Everything above this is for mobile (mobile-first)
  */
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */ 
 @media (min-width: 576px) {
 
 }

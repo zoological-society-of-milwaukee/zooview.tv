@@ -1,12 +1,13 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const HistoryBackButton = ({ history }) => {
+import { useHistory } from "react-router-dom";
+const HistoryBackButton = () => {
+ const history = useHistory(); 
   return (
     <button
       type="button"
-      // onClick={history.goBack}
+      onClick={history.goBack}
       style={{
         background: 'none',
         color: '#fff',

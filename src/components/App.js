@@ -15,19 +15,15 @@ import '../media';
 const App = (props) => {
   return (
     <>
-    <BrowserRouter>
-
-
-      <Header {...props} />
-
+    <BrowserRouter> 
+      <Header {...props} /> 
       <Switch>
         <Route exact path="/" component={() => <Frontpage {...props} />} />
         <Route path="/exhibits/:slug" component={() => <ExhibitDetailPage {...props} />} />
         <Route path="/legal/terms-of-service" component={() => <TermsOfServicePage {...props} />} />
         <Route path="/legal/privacy-policy" component={() => <PrivacyPolicyPage {...props} />} />
         <Route component={() => <Error404 {...props} />} />
-      </Switch>
-
+      </Switch> 
       <Footer />
       </BrowserRouter>
     </>
