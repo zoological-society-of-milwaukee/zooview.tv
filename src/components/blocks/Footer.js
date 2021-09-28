@@ -3,7 +3,10 @@ import { Container, Row, Col, Form, Button, FormGroup, Input } from 'reactstrap'
 
 // import imgFooterPartners from '../../media/images/footer-sponsors.png';
 
-const Footer = () => (
+const Footer = () => {
+    const year = new Date().getFullYear();
+  
+return(
   <footer>
     <Container>
       <Row>
@@ -29,13 +32,13 @@ const Footer = () => (
         <Col>
 
           <p style={{ textAlign: 'center', marginBottom: 20 }}>
-            © 2021 Zoological Society of Milwaukee, Zooview.tv. All Rights Reserved.
+            © {year} Zoological Society of Milwaukee, Zooview.tv. All Rights Reserved.
           </p>
 
         </Col>
       </Row>
     </Container>
   </footer>
-)
+)}
 
 export default Footer

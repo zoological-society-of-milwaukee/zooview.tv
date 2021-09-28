@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default () => (
+export default function t(){
+  return(
   <div style={{ padding: 20 }}>
     <h2>zooview.tv Terms of Service</h2>
     <h3>1. Terms</h3>
@@ -35,3 +36,4 @@ export default () => (
     <p>These terms and conditions are governed by and construed in accordance with the laws of East Troy and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
   </div>
 )
+}

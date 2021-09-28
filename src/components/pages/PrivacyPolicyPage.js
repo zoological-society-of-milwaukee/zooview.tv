@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default () => (
+export default function p(){  
+  return(
   <div style={{ padding: 20 }}>
     <h2>Privacy Policy</h2>
     <p>Your privacy is important to us. It is Higher Education Records's policy to respect your privacy regarding any information we may collect from you across our website, <a href="http://highereducationrecords.com">http://highereducationrecords.com</a>, and other sites we own and operate.</p>
@@ -13,3 +14,4 @@ export default () => (
     <p>This policy is effective as of 1 October 2018.</p>
   </div>
 )
+}

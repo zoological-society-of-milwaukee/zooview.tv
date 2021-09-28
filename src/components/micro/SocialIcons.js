@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default () => (
+export default function icon (){ 
+  return(
   <ul className="social-icons">
     <li>
       <a href={process.env.REACT_APP_TWITTER_URL} target="_blank" rel="noopener noreferrer">
@@ -35,3 +36,4 @@ export default () => (
     </li>
   </ul>
 )
+}
