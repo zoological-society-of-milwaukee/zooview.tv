@@ -15,7 +15,8 @@ const SlideCard = (props) => {
         className="ab-slidecard"
         style={{
           backgroundImage: `url(${image})`,
-          backgroundColor:  themeColor
+          backgroundColor:  themeColor,
+          backgroundSize:'cover'
         }}
       >
         <FontAwesomeIcon icon="circle" />{' '}LIVE

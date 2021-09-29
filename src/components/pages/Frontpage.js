@@ -18,7 +18,8 @@ const Frontpage = () => {
                   style={{
                     backgroundImage: `url(${i.image})`,
                     backgroundColor: i.themeColor,
-                    margin:"10px auto",
+                    margin:'10px auto',
+                    backgroundSize:'cover',
                   }}
                 >
                   <div style={{ textShadow: '1px 1px 0px rgba(0,0,0,0.4)', positon: 'relative', top: 10, left: 10, fontSize: '0.78rem', color: '#03b830', fontWeight: 'bold' }}>
