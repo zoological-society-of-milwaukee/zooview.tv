@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@babel/helper-builder-react-jsx": "^7.15.4",
+    "@babel/helper-regex": "^7.10.5",
     "react-snap": "^1.23.0"
   },
   "scripts": {
