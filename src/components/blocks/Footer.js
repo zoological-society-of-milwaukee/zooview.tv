@@ -11,12 +11,12 @@ return(
     <Container>
       <Row>
         <Col sm="12" md="6">
-          <h4>LIVE STREAMING HELPS OUR ANIMALS</h4>
-          <p>The Zoo’s many snow-loving animals such as the snow leopards, polar bear, Snow Lilly, as well as the caribou and elk herds are most active during the colder temperatures. Feel the crunch of snow beneath your feet and the fresh snow on your cheeks when you visit the Zoo’s North American river otters in their year-round outdoor exhibit, Otter Passage.</p>
+          <h4>WELCOME THE WILD INTO YOUR HOME</h4>
+          <p>Lions, tigers, penguins and more! Observing Zoo animals builds appreciation, curiosity and empathy for the natural world and the creatures that inhabit it. With these live streams, you can check in with your favorite Milwaukee County Zoo residents from the comfort of your home.</p>
         </Col>
         <Col>
           <h4>SEE YOU AT THE ZOO</h4>
-          <p>When a break from the chill is what’s in order, step inside the Small Mammals, Aviary, Aquatic & Reptile Center and Stearns Family Apes of Africa buildings to get toasty-warm!</p>
+          <p>The Milwaukee County Zoo’s 190-acre complex is home to more than 2,200 animals. The Zoo is one of Milwaukee’s oldest environmental establishments and provides countless opportunities for education, outdoor activity and family fun. </p>
           <Form>
             <FormGroup>
               <Input type="email" name="email" id="email" placeholder="Your Email Address" style={{ display: 'inline-block', background: '#202020', border: '1px solid #353535', maxWidth: 300, marginRight: 10 }} />

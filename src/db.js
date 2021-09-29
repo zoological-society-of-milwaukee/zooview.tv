@@ -13,7 +13,7 @@ export const streams = [
   {
     id: 1,
     slug: 'african-lion',
-    name: 'African Lion',
+    name: 'AFRICAN LIONS/HYENAS',
     description: commonDesc,
     image: imgAfricanLion,
     streamUrl: 'g73dkuvm',
@@ -26,5 +26,5 @@ export const streams = [
   { id: 5, slug: 'jaguar', name: 'Jaguars', description: commonDesc, image: imgJaguar, streamUrl: 'kerk35wt', status: 'live', themeColor: '#c7181e' },
   { id: 6, slug: 'lake-wisconsin', name: 'Lake Wisconsin', description: commonDesc, image: imgLakeWisconsin, streamUrl: 'npgrej2b', status: 'live', themeColor: '#844070' ,bg:'-70px'},
   { id: 7, slug: 'orangutans', name: 'Orangutans', description: commonDesc, image: imgOrangutans, streamUrl: 'pxd2c11u', status: 'live', themeColor: '#9e700d' },
-  { id: 8, slug: 'polar-bear', name: 'Polar Bear', description: commonDesc, image: imgPolarBear, streamUrl: 'lcdry4k0', status: 'live', themeColor: '#336699' }
+  { id: 8, slug: 'polar-bear', name: 'HARBOR SEALS', description: commonDesc, image: imgPolarBear, streamUrl: 'lcdry4k0', status: 'live', themeColor: '#336699' }
 ];
