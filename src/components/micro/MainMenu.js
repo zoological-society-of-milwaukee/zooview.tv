@@ -3,58 +3,28 @@ import { NavLink as RRNavLink } from 'react-router-dom';
 import {
   Nav,
   // NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink, } from 'reactstrap';
 
 import { streams } from '../../db';
 
-export default class Example extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
-  render() {
+export default   function MainMenu({toggle}) { 
+  
     return (
-      <Nav className="ml-auto" navbar>
+      <Nav className="ml-auto " navbar>  
+            {streams.map(i => ( 
+              <li>
+                    <NavLink tag={RRNavLink} exact to={`/exhibits/${i.slug}`} onClick={toggle} activeClassName="active">
+                      {i.name}
+                     </NavLink> 
+              </li>
+            
+            ))} 
 
-        <UncontrolledDropdown nav inNavbar>
-
-          <DropdownToggle nav caret>
-            Exhibits
-          </DropdownToggle>
-
-          <DropdownMenu right>
-
-            {streams.map(i => (
-              <DropdownItem key={i.id}>
-                <NavLink tag={RRNavLink} exact to={`/exhibits/${i.slug}`} activeClassName="active">
-                  {i.name}
-                </NavLink>
-              </DropdownItem>
-            ))}
-
-            <DropdownItem divider />
-
-            <DropdownItem>
-              View All
-            </DropdownItem>
-
-          </DropdownMenu>
-
-        </UncontrolledDropdown>
+            <li>  <hr/> </li> 
+            
+            <li> <NavLink  tag={RRNavLink}  exact to='/legal/terms-of-service' onClick={toggle} activeClassName="active">   Terms Of Service    </NavLink></li>
+            <li> <NavLink  tag={RRNavLink}   exact to='/legal/privacy-policy' onClick={toggle} activeClassName="active">   Privacy Policy    </NavLink></li> 
       </Nav>
     );
-  }
+ 
 }

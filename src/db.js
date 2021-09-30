@@ -13,7 +13,7 @@ export const streams = [
   {
     id: 1,
     slug: 'african-lion',
-    name: 'AFRICAN LIONS/HYENAS',
+    name: 'African Lions/Hyenas',
     description: `Watch them roam or see them snooze. Get your big cat fix with African lions Patty, Amira and Eloise. This camera also features the Zoo’s hyenas, so keep an eye out for Scruffy and Nyota. `,
     image: imgAfricanLion,
     streamUrl: 'g73dkuvm',
@@ -26,5 +26,5 @@ export const streams = [
   { id: 5, slug: 'jaguar', name: 'Jaguars', description:  `Though Jaguars are just the third biggest wild cat species, they’re the biggest cats native to the Americas. Mother Stella and son Francisco are staples of the Zoo’s Florence Mila Borchert Big Cat Country. `, image: imgJaguar, streamUrl: 'kerk35wt', status: 'live', themeColor: '#c7181e' },
   { id: 6, slug: 'lake-wisconsin', name: 'Lake Wisconsin', description: `160 species of freshwater fish reside in Wisconsin lakes and rivers. Many of these can be found in the Aquatic & Reptile Center’s Lake Wisconsin. Check out this live camera to see which fish swim by.   `, image: imgLakeWisconsin, streamUrl: 'npgrej2b', status: 'live', themeColor: '#844070' ,bg:'-70px'},
   { id: 7, slug: 'orangutans', name: 'Orangutans', description: `The Milwaukee Zoo is home to two orangutans, Tommy and Alex. Both enjoy eating veggies and fruit, playing with craft paper and taking afternoon naps. Tune in to see what they’re up to today`, image: imgOrangutans, streamUrl: 'pxd2c11u', status: 'live', themeColor: '#9e700d' },
-  { id: 8, slug: 'harbor-seals', name: 'HARBOR SEALS', description: `Watch as the seals swim in their pool and pop up for a quick breath or training session. Guests can see them throughout the year because their thick layer of blubber keeps them warm in the winter`, image: imgSeals, streamUrl: 'lcdry4k0', status: 'live', themeColor: '#336699' }
+  { id: 8, slug: 'harbor-seals', name: 'Harbor Seals', description: `Watch as the seals swim in their pool and pop up for a quick breath or training session. Guests can see them throughout the year because their thick layer of blubber keeps them warm in the winter`, image: imgSeals, streamUrl: 'lcdry4k0', status: 'live', themeColor: '#336699' }
 ];

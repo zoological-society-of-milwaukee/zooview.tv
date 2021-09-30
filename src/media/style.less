@@ -38,7 +38,7 @@
 }
 
 body {
-  margin-top: 50px;
+  padding-top:20px;
   background: #000;
   background-image: url('./images/bg-1.jpg');
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
 }
 
 hr {
-  border-color: red;
+  border-color: rgb(184, 174, 174);
 }
 
 .dropdown-menu {
@@ -75,12 +75,13 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .logo {
-  width: 220px;
+  width: 160px;
   position: relative;
-  top: 3px;
+  top: 3px; 
 }
-
+ 
 .header-partners {
+  order:3;
   margin: 20px auto 10px auto;
   display: block;
   img {
@@ -202,16 +203,30 @@ a:hover {
   text-decoration: none;
 }
 
+ul , ol{
+  color:white;
+}
 
-
+.main-nav{
+  position:absolute;
+  right: 0;
+  top:100px;
+  z-index: 5;
+  background-color: #191919; 
+  ul{
+    padding: 20px 30px;
+  }
+} 
 /*
  * MEDIA QUERIES
  * Everything above this is for mobile (mobile-first)
  */
 
-/* Small devices (landscape phones, 576px and up) */ 
-@media (min-width: 576px) {
-
+ 
+@media (min-width: 376px) {
+  .logo {
+      width: 220px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -224,8 +239,7 @@ a:hover {
 
   .logo {
     width: 320px;
-    position: relative;
-    top: -20px;
+    position: relative; 
   }
 
   .frontpage-card {
@@ -238,17 +252,16 @@ a:hover {
   .ab-slidecard {
     height: 320px;
   }
+  .header-partners {
+    order:1;
+}
 
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-  .header-partners {
-    position: absolute;
-    top: -30px;
-    right: 129px;
-  }
+ 
 
 }
 

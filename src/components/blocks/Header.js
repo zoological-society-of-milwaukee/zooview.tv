@@ -14,22 +14,21 @@ const Header = () => {
  
   return (
     <Container>
-      <Navbar dark expand="md">
+      <Navbar dark  >
 
-        <NavLink to="/">
-          <HeaderLogo className="logo" />
+        <NavLink  to="/">
+          <HeaderLogo  className="logo" />
         </NavLink>
 
-        <NavbarToggler onClick={toggle} />
-
+        <NavbarToggler style={{order:2}} onClick={toggle} /> 
+        
         <div className="center header-partners">
-          <img src={imgHeaderPartners} alt="" />
-        </div>
+          <img src={imgHeaderPartners} alt="partners" />
+        </div>  
 
-        <Collapse isOpen={isOpen} navbar>
-          <MainMenu />
-        </Collapse>
-
+        <Collapse className="main-nav" isOpen={isOpen}  >
+          <MainMenu toggle={toggle} />   
+        </Collapse> 
       </Navbar>
     </Container>
   );
