@@ -1,7 +1,9 @@
 import React from 'react'
+import { Container } from 'reactstrap'
 
 export default function p(){  
   return(
+    <Container> 
   <div style={{ padding: 20 }}>
     <h2>Privacy Policy</h2>
     <p>Your privacy is important to us. It is Higher Education Records's policy to respect your privacy regarding any information we may collect from you across our website, <a href="http://highereducationrecords.com">http://highereducationrecords.com</a>, and other sites we own and operate.</p>
@@ -13,5 +15,6 @@ export default function p(){
     <p>Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.</p>
     <p>This policy is effective as of 1 October 2018.</p>
   </div>
+  </Container> 
 )
 }

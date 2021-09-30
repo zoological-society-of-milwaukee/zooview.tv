@@ -1,7 +1,9 @@
 import React from 'react'
+import { Container } from 'reactstrap'
 
 export default function t(){
   return(
+    <Container> 
   <div style={{ padding: 20 }}>
     <h2>zooview.tv Terms of Service</h2>
     <h3>1. Terms</h3>
@@ -34,6 +36,7 @@ export default function t(){
     <p>zooview.tv may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
     <h3>8. Governing Law</h3>
     <p>These terms and conditions are governed by and construed in accordance with the laws of East Troy and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
-  </div>
+  </div>  
+  </Container>
 )
 }

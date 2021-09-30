@@ -12,17 +12,17 @@ import {
 
 import '../media';
 
-const App = (props) => {
+const App = () => {
   return (
     <>
     <BrowserRouter> 
-      <Header {...props} /> 
+      <Header /> 
       <Switch> 
-        <Route path="/exhibits/:slug" component={() => <ExhibitDetailPage {...props} />} />
-        <Route path="/legal/terms-of-service" component={() => <TermsOfServicePage {...props} />} />
-        <Route path="/legal/privacy-policy" component={() => <PrivacyPolicyPage {...props} />} />
-        <Route exact path="/" component={() => <Frontpage {...props} />} />
-        <Route component={() => <Error404 {...props} />} />
+        <Route path="/exhibits/:slug"   >  <ExhibitDetailPage  />  </Route>  
+        <Route path="/legal/terms-of-service" >   <TermsOfServicePage  />  </Route>  
+        <Route path="/legal/privacy-policy" >   <PrivacyPolicyPage /> </Route>  
+        <Route exact path="/"  > <Frontpage  />   </Route>  
+        <Route  >  <Error404/></Route>  
       </Switch> 
       <Footer />
       </BrowserRouter>
