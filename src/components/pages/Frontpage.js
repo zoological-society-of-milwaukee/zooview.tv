@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link ,useHistory } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,9 +8,15 @@ import { streams } from '../../db';
 
 const Frontpage = () => {
   const location= useHistory().location?.pathname;
+      const [serverFix , setServerFix] = useState(0)
   console.log(location=="/");
+  
+  useEffect(() => {
+    setServerFix(1);
+  }, [])
+  console.log({serverFix},{location})
   return (
-    location=="/"?(
+    location=="/"&&serverFix?(
       <Container>
       <Row style={{justifyContent:'center'}}> 
         {streams.map(i => (
