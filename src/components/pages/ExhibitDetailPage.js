@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'reactstrap'; 
 import { HistoryBackButton, SlideCard } from '../micro';
@@ -10,7 +10,15 @@ const ExhibitDetailPage = () => {
   const { name, image, streamUrl, description, bg } = i;
 
   const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch="+streamUrl; 
-
+const [serverFix, setserverFix] = useState(0);
+console.log(serverFix);
+useEffect(() => {
+  setTimeout(() => {
+    
+  setserverFix(1)
+  }, 1000);
+  
+}, [ ])
   return ( 
     <>
       <Container> 
@@ -19,7 +27,7 @@ const ExhibitDetailPage = () => {
             <HistoryBackButton />
           </div>
 
-          <Row>
+         {serverFix?<Row>
             <Col sm="12" md="7" xl="8">
               <div style={{marginBottom:20}} className="embed-responsive embed-responsive-16by9"> 
                       <iframe src =  {videoUrl} 
@@ -57,7 +65,7 @@ const ExhibitDetailPage = () => {
               </Button>
 
             </Col>
-          </Row>
+          </Row>:""  } 
         </div>
 
       </Container>
