@@ -10,8 +10,7 @@ const ExhibitDetailPage = () => {
   const { name, image, streamUrl, description, bg } = i;
 
   const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch="+streamUrl; 
-const [serverFix, setserverFix] = useState(0);
-console.log(serverFix);
+const [serverFix, setserverFix] = useState(0); 
 useEffect(() => { 
   setserverFix(1)  
 }, [ ])
@@ -56,7 +55,7 @@ useEffect(() => {
                 <p style={{ fontSize: '0.88rem', color: '#c7c7c7' }}>{description}</p>
               }
 
-              <Button color="success" large="true" block>
+              <Button href="https://www.zoosociety.org/support/help-the-society/sponsor-an-animal/" color="success" target="blanck" large="true" block>
                 Sponsor this Animal
               </Button>
 
