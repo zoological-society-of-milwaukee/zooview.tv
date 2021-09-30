@@ -12,22 +12,17 @@ const ExhibitDetailPage = () => {
   const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch="+streamUrl; 
 const [serverFix, setserverFix] = useState(0);
 console.log(serverFix);
-useEffect(() => {
-  setTimeout(() => {
-    
-  setserverFix(1)
-  }, 1000);
-  
+useEffect(() => { 
+  setserverFix(1)  
 }, [ ])
   return ( 
     <>
-      <Container> 
+     {serverFix? <Container> 
         <div className="dark-hero"> 
           <div style={{ margin: '0px 0 10px 0' }}>
             <HistoryBackButton />
-          </div>
-
-         {serverFix?<Row>
+          </div> 
+         <Row>
             <Col sm="12" md="7" xl="8">
               <div style={{marginBottom:20}} className="embed-responsive embed-responsive-16by9"> 
                       <iframe src =  {videoUrl} 
@@ -65,10 +60,10 @@ useEffect(() => {
               </Button>
 
             </Col>
-          </Row>:""  } 
+          </Row>
         </div>
 
-      </Container>
+      </Container>:""  } 
 
       <div className="hwrapper">
         <div className="hwrapper-inner">
