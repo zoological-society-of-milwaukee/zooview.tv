@@ -9,7 +9,7 @@ import { streams } from '../../db';
 const Frontpage = () => {
   return (
     <Container>
-      <Row style={{justifyContent:'center'}}> 
+      {/* <Row style={{justifyContent:'center'}}> 
         {streams.map(i => (
           <Col key={i.id} xs="12" sm="6"  md="auto" className="center"> 
             <Link to={`/exhibits/${i.slug}`}>
@@ -32,7 +32,9 @@ const Frontpage = () => {
               </Link>  
           </Col>
         ))} 
-      </Row>
+      </Row> */}
+      123312
+      <h1> test</h1>
     </Container>
   );
 }
