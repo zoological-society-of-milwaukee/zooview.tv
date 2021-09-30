@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useHistory } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Overdrive from 'react-overdrive';
@@ -7,8 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { streams } from '../../db';
 
 const Frontpage = () => {
+  const location= useHistory().location?.pathname;
+  console.log(location=="/");
   return (
-    <Container>
+    location=="/"?(
+      <Container>
       <Row style={{justifyContent:'center'}}> 
         {streams.map(i => (
           <Col key={i.id} xs="12" sm="6"  md="auto" className="center"> 
@@ -34,6 +37,7 @@ const Frontpage = () => {
         ))} 
       </Row>
     </Container>
+    ) : "" 
   );
 }
 export default Frontpage;
