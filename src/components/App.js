@@ -18,7 +18,7 @@ const App = (props) => {
     <BrowserRouter> 
       <Header {...props} /> 
       <Switch>
-        <Route exact path="/" component={() => <Frontpage {...props} />} />
+        {/* <Route exact path="/" component={() => <Frontpage {...props} />} /> */}
         <Route path="/exhibits/:slug" component={() => <ExhibitDetailPage {...props} />} />
         <Route path="/legal/terms-of-service" component={() => <TermsOfServicePage {...props} />} />
         <Route path="/legal/privacy-policy" component={() => <PrivacyPolicyPage {...props} />} />

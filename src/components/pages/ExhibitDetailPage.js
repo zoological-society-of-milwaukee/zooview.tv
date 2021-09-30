@@ -22,7 +22,7 @@ const ExhibitDetailPage = () => {
           <Row>
             <Col sm="12" md="7" xl="8">
               <div style={{marginBottom:20}} className="embed-responsive embed-responsive-16by9"> 
-                      {/* <iframe src =  {videoUrl} 
+                      <iframe src =  {videoUrl} 
                       title={`Live stream of the ${name} exhibit`}
                       name = "ls-player" 
                       scrolling = "no"
@@ -30,7 +30,7 @@ const ExhibitDetailPage = () => {
                       frameBorder = "0"
                       webkitallowfullscreen = "true"
                       mozallowfullscreen = "true"
-                      allowFullScreen   > </iframe>  */}
+                      allowFullScreen   > </iframe> 
               </div>
             </Col>
             <Col> 
