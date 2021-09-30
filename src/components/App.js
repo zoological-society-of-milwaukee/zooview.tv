@@ -18,11 +18,11 @@ const App = () => {
     <BrowserRouter> 
       <Header /> 
       <Switch> 
-        <Route path="/exhibits/:slug"   >  <ExhibitDetailPage  />  </Route>  
+        <Route path="/exhibits/:slug"   >         <ExhibitDetailPage  />  </Route>  
         <Route path="/legal/terms-of-service" >   <TermsOfServicePage  />  </Route>  
-        <Route path="/legal/privacy-policy" >   <PrivacyPolicyPage /> </Route>  
+        <Route path="/legal/privacy-policy" >     <PrivacyPolicyPage /> </Route>  
         <Route exact path="/"  > <Frontpage  />   </Route>  
-        <Route  >  <Error404/></Route>  
+        <Route  >                                 <Error404/></Route>  
       </Switch> 
       <Footer />
       </BrowserRouter>
