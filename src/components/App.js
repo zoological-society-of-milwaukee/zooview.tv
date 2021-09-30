@@ -17,11 +17,11 @@ const App = (props) => {
     <>
     <BrowserRouter> 
       <Header {...props} /> 
-      <Switch>
-        <Route exact path="/" component={() => <Frontpage {...props} />} />
+      <Switch> 
         <Route path="/exhibits/:slug" component={() => <ExhibitDetailPage {...props} />} />
         <Route path="/legal/terms-of-service" component={() => <TermsOfServicePage {...props} />} />
         <Route path="/legal/privacy-policy" component={() => <PrivacyPolicyPage {...props} />} />
+        <Route exact path="/" component={() => <Frontpage {...props} />} />
         <Route component={() => <Error404 {...props} />} />
       </Switch> 
       <Footer />

@@ -1,33 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState , useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Container, Collapse, Navbar, NavbarToggler } from 'reactstrap'; 
 import { MainMenu } from '../micro';
 import { ReactComponent as HeaderLogo } from '../../media/images/logo.svg';
 import imgHeaderPartners from '../../media/images/header-partners.png';
- 
+import useOnClickOutside from '../hooks/useOnClickOutside'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   function toggle() {
     isOpen ? setIsOpen(false) : setIsOpen(true)
   }
+  function close() {
+    setIsOpen(false)  
+  }
+  const ref = useRef();
+  const ref2 = useRef();
+  useOnClickOutside(ref, close , ref2);
  
   return (
     <Container>
-      <Navbar dark  >
-
+      <Navbar dark  > 
         <NavLink  to="/">
           <HeaderLogo  className="logo" />
-        </NavLink>
-
-        <NavbarToggler style={{order:2}} onClick={toggle} /> 
-        
-        <div className="center header-partners">
-          <img src={imgHeaderPartners} alt="partners" />
-        </div>  
-
+        </NavLink> 
+            <div  ref={ref2}  style={{order:2}}>
+              <NavbarToggler onClick={toggle} /> 
+            </div>  
+          <div className="center header-partners">
+            <img src={imgHeaderPartners} alt="partners" />
+          </div>  
         <Collapse className="main-nav" isOpen={isOpen}  >
-          <MainMenu toggle={toggle} />   
+          <div ref={ref}>
+              <MainMenu close={close} />   
+          </div> 
         </Collapse> 
       </Navbar>
     </Container>
