@@ -17,7 +17,8 @@ useEffect(() => {
 }, [ ])
   return ( 
     <>
-     {serverFix? <Container> 
+   {serverFix? <div>
+ <Container> 
         <div className="dark-hero"> 
           <div style={{ margin: '0px 0 10px 0' }}>
             <HistoryBackButton />
@@ -63,13 +64,15 @@ useEffect(() => {
           </Row>
         </div>
 
-      </Container>:""  } 
-
+      </Container>
       <div className="hwrapper">
         <div className="hwrapper-inner">
           {streams.map((item ,i) => <SlideCard slide={item} key={i} />)}
         </div>
       </div>
+    </div>:""  }  
+     
+
     </>
 
   );
