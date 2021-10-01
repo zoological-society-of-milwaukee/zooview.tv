@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button, FormGroup, Input } from 'reactstrap';
+import { Container, Row, Col  } from 'reactstrap';
 
 // import imgFooterPartners from '../../media/images/footer-sponsors.png';
 
@@ -26,7 +26,9 @@ return(
       <Row>
         <Col> 
           <p style={{ textAlign: 'center', marginBottom: 20 }}>
-            © {year} Zoological Society of Milwaukee, Zooview.tv. All Rights Reserved.
+          <a style={{color:"#a1a1a1" , textDecoration:"underline" , marginLeft:"10px"}} href="https://www.zoosociety.org/policies/">Policies </a>  <br/>
+            © {year} Zoological Society of Milwaukee, Zooview.tv. All Rights Reserved. 
+          
           </p> 
         </Col>
       </Row>

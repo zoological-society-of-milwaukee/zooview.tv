@@ -3,20 +3,22 @@ import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'reactstrap'; 
 import { HistoryBackButton, SlideCard } from '../micro';
 import { streams }  from '../../db'; 
+import Error404 from './Error404';
  
 const ExhibitDetailPage = () => {
   let {slug} = useParams();
-  const i = streams.find(j => j.slug === slug); 
-  const { name, image, streamUrl, description, bg } = i;
-
-  const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch="+streamUrl; 
+  const i = streams.find(j => j.slug === slug);  
+     const { name, image, streamUrl, description, bg } = i?i:{}; 
+     const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch="+streamUrl; 
+ 
+ 
 const [serverFix, setserverFix] = useState(0); 
 useEffect(() => { 
   setserverFix(1)  
 }, [ ])
   return ( 
     <>
-   {serverFix? <div>
+   {serverFix&&i? <div>
  <Container> 
         <div className="dark-hero"> 
           <div style={{ margin: '0px 0 10px 0' }}>
@@ -73,11 +75,8 @@ useEffect(() => {
           {streams.map((item ,i) => <SlideCard slide={item} key={i} />)}
         </div>
       </div>
-    </div>:""  }  
-     
-
-    </>
-
+    </div>: serverFix?<Error404/>:"" }   
+    </> 
   );
 }
 export default ExhibitDetailPage;
