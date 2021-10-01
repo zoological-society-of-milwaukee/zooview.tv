@@ -16,14 +16,8 @@ export default   function MainMenu({close}) {
                     <NavLink  tag={RRNavLink} exact to={`/exhibits/${item.slug}`} onClick={close} activeClassName="active">
                       {item.name}
                      </NavLink> 
-              </li>
-            
-            ))} 
-
-            <li>  <hr/> </li> 
-            
-            <li> <NavLink  tag={RRNavLink}  exact to='/legal/terms-of-service' onClick={close} activeClassName="active">   Terms Of Service    </NavLink></li>
-            <li> <NavLink  tag={RRNavLink}   exact to='/legal/privacy-policy' onClick={close} activeClassName="active">   Privacy Policy    </NavLink></li> 
+              </li> 
+            ))}  
       </Nav>
     );
  

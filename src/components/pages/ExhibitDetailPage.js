@@ -33,29 +33,33 @@ useEffect(() => {
                       frameBorder = "0"
                       webkitallowfullscreen = "true"
                       mozallowfullscreen = "true"
-                      allowFullScreen   > </iframe> 
+                      allowFullScreen > </iframe> 
               </div>
             </Col>
             <Col> 
-                <div
-                  style={{
-                    margin:'0  auto   10px  auto',
-                    width: '70%',
-                    display: 'block',
-                    backgroundImage: `url(${image})`,
-                    backgroundPosition:`0px ${bg?bg:"-30px"}`,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: '  cover',
-                    height: 200,
-                    borderRadius:30
-                  }}
-                />  
-              <h2>{name}</h2> 
-              {description &&
-                <p style={{ fontSize: '0.88rem', color: '#c7c7c7' }}>{description}</p>
-              }
+              <Row style={{justifyContent:'center'}}  >   
+                  <Col xs='8' md={10}  > 
+                          <div 
+                            style={{
+                            margin:'0  auto   10px  auto', 
+                            backgroundImage: `url(${image})`,
+                            backgroundPosition:`0px ${bg?bg:"-30px"}`,
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'cover',
+                            height: 200,
+                            borderRadius:30
+                          }}
+                          />  
+                  </Col>
+                  <Col xs='12' >
+                      <h2>{name}</h2> 
+                        {description &&
+                          <p style={{ fontSize: '0.88rem', color: '#c7c7c7' }}>{description}</p>
+                        }
+                  </Col>      
+              </Row>  
 
-              <Button href="https://www.zoosociety.org/support/help-the-society/sponsor-an-animal/" color="success" target="blanck" large="true" block>
+              <Button style={{marginTop:10}} href="https://www.zoosociety.org/support/help-the-society/sponsor-an-animal/" color="success" target="blanck"  large="true" block>
                 Sponsor this Animal
               </Button>
 

@@ -17,24 +17,17 @@ return(
         <Col>
           <h4>SEE YOU AT THE ZOO</h4>
           <p>The Milwaukee County Zoo’s 190-acre complex is home to more than 2,200 animals. The Zoo is one of Milwaukee’s oldest environmental establishments and provides countless opportunities for education, outdoor activity and family fun. </p>
-          <Form>
-            <FormGroup>
-              <Input type="email" name="email" id="email" placeholder="Your Email Address" style={{ display: 'inline-block', background: '#202020', border: '1px solid #353535', maxWidth: 300, marginRight: 10 }} />
-              <Button style={{ background: '#d37e1e', border: 'none', color: '#fff' }}>SIGN UP</Button>
-            </FormGroup>
-          </Form>
+ 
         </Col>
       </Row>
     </Container>
 
     <Container style={{  marginTop: 50 }}>
       <Row>
-        <Col>
-
+        <Col> 
           <p style={{ textAlign: 'center', marginBottom: 20 }}>
             © {year} Zoological Society of Milwaukee, Zooview.tv. All Rights Reserved.
-          </p>
-
+          </p> 
         </Col>
       </Row>
     </Container>

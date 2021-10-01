@@ -9,7 +9,7 @@ import useOnClickOutside from '../hooks/useOnClickOutside'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   function toggle() {
-    isOpen ? setIsOpen(false) : setIsOpen(true)
+    isOpen ? setIsOpen(false) : setIsOpen(true);
   }
   function close() {
     setIsOpen(false)  
@@ -25,7 +25,7 @@ const Header = () => {
           <HeaderLogo  className="logo" />
         </NavLink> 
             <div  ref={ref2}  style={{order:2}}>
-              <NavbarToggler onClick={toggle} /> 
+              <button className= {  isOpen?"humburger-menu open":"humburger-menu "} onClick={toggle} > <span></span> <span></span> <span></span> </button>
             </div>  
           <div className="center header-partners">
             <img src={imgHeaderPartners} alt="partners" />

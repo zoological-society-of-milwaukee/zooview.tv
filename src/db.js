@@ -1,4 +1,4 @@
-import imgAfricanLion from './media/images/mke-zoo-african-lion.jpg';
+import imgAfricanLion from './media/images/mke-zoo-african-lion-hyena.jpg';
 import imgAmurTiger from './media/images/mke-zoo-amur-tiger.jpg';
 import imgHumboldtPenguins from './media/images/mke-zoo-humboldt-penguins.jpg';
 // import imgHyenas from './media/images/mke-zoo-hyenas.png';
@@ -12,13 +12,14 @@ import imgSeals from './media/images/mke-zoo-seal.jpg';
 export const streams = [
   {
     id: 1,
-    slug: 'african-lion',
+    slug: 'african-lion-hyena',
     name: 'African Lions/Hyenas',
     description: `Watch them roam or see them snooze. Get your big cat fix with African lions Patty, Amira and Eloise. This camera also features the Zoo’s hyenas, so keep an eye out for Scruffy and Nyota. `,
     image: imgAfricanLion,
     streamUrl: 'g73dkuvm',
     status: 'live',
-    themeColor: '#089882'
+    themeColor: '#089882',
+    bg:"-70px"
   },
   { id: 2, slug: 'amur-tiger', name: 'Amur Tiger', description: `Amur tigers are the biggest of all the big cats. Despite their size, they’re also some of nature’s most elusive predators. You may catch a glimpse of either Tula or Kash throughout the day. `, image: imgAmurTiger, streamUrl: 'bn5ta0c2', status: 'live', themeColor: '#709239' ,bg:'-80px' },
   { id: 3, slug: 'humboldt-penguin', name: 'Humboldt Penguins', description:  `Diving, splashing and waddling around, Humboldt penguins provide endless entertainment. Tune in mid-morning and mid-afternoon for a chance to watch one of their daily feedings.  `, image: imgHumboldtPenguins, streamUrl: 'j8tpt8et', status: 'live', themeColor: '#495c86' },

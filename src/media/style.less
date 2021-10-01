@@ -67,13 +67,16 @@ hr {
 }
 
 h1,h2,h3,h4,h5,h6 {
+  
   font-family: 'Bitter-Bold', serif;
   text-transform: uppercase;
 }
 h1,h2,h3,h4,h5,h6,p {
   color: white;
 }
-
+h2{
+  font-size: 1.6rem;
+}
 .logo {
   width: 160px;
   position: relative;
@@ -221,12 +224,61 @@ ul , ol{
  * MEDIA QUERIES
  * Everything above this is for mobile (mobile-first)
  */
+.humburger-menu{
+  background: black;
+   border-radius: 10px;
+   border:solid rgba(255, 255, 255, 0.527) 2px;
+   height: 40px;
+   width: 40px;
+   padding: 5px;
+   span{
+     transition:0.5s;
+     width: 100%;
+     display: block;
+     height: 2px;
+     background-color: rgba(255, 255, 255, 0.527);
+     &:nth-child(1){
+       transform: translateY(-6px);
+     }
+     &:nth-child(3){
+       transform: translateY(6px);
+     }
+  }
 
+  &.open , &:hover{
+    background: rgb(88, 88, 88);
+  }
+
+  &.open{
+    span{
+   
+      background-color: rgba(255, 255, 255, 0.884);
+      &:nth-child(1){
+        transform: translateY(2px) rotate(-45deg);
+      }
+      &:nth-child(2){
+        opacity: 0;
+      }
+      &:nth-child(3){
+        transform: translateY(-2px) rotate(45deg);
+      }
+   }
+  }
+
+
+}
+@import 'styles/nav.less';
  
 @media (min-width: 376px) {
   .logo {
       width: 220px;
   }
+}
+
+@media (min-width: 768px) {
+ h2{
+  font-size: 2rem;
+ }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
