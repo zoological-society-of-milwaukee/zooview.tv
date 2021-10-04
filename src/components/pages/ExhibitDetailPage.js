@@ -26,7 +26,11 @@ const ExhibitDetailPage = () => {
         setfade(0);
         setTimeout(() => {
             setfade&&setfade(1);
-            setNameBtn&&nameBtnstate===namebtn2?(setNameBtn(namebtn1), setStreamId(stream2Url)):(setNameBtn(namebtn2),setStreamId(streamUrl));
+            if( nameBtnstate===namebtn2){
+                setNameBtn(namebtn1), setStreamId(stream2Url)
+            } else{
+                setNameBtn(namebtn2),setStreamId(streamUrl)
+            }   
         }, 500);
     }
 
