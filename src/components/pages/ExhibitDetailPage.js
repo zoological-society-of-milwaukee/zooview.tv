@@ -22,9 +22,11 @@ const ExhibitDetailPage = () => {
 
     function changeVideo() {    
                 if( nameBtnstate===namebtn2){
-                    setNameBtn(namebtn1), setStreamId(stream2Url)
+                    namebtn1&&setNameBtn(namebtn1);
+                    stream2Url&&setStreamId(stream2Url)
                 } else{
-                    setNameBtn(namebtn2),setStreamId(streamUrl)
+                    namebtn2&&setNameBtn(namebtn2);
+                    streamUrl&&setStreamId(streamUrl);
                 }    
     }
 
