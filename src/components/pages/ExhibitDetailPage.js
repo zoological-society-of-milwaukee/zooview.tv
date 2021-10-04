@@ -16,8 +16,7 @@ const ExhibitDetailPage = () => {
     const [nameBtnstate , setNameBtn] = useState(namebtn2);
     const [fade , setfade] = useState(1);
   
-    const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch=" + streamId;
-    console.log('render');
+    const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch=" + streamId; 
 
     if (stream2Url !== undefined) {
         secondVideoButton = <Button onClick={changeVideo} color="primary" block><FontAwesomeIcon icon="video"/> Switch to {nameBtnstate} Camera</Button>
