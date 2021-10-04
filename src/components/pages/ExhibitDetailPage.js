@@ -10,24 +10,33 @@ const ExhibitDetailPage = () => {
     let {slug} = useParams();
     const i = streams.find(j => j.slug === slug);
     const {name, image, streamUrl, description, bg} = i ? i : {};
-    const {name2, stream2Url} = i ? i : {};
+    const {namebtn1 , namebtn2, stream2Url} = i ? i : {};
     let secondVideoButton = '';
-    const [streamId , setStreamId]=useState(streamUrl)
+    const [streamId , setStreamId]=useState(streamUrl); 
+    const [nameBtnstate , setNameBtn] = useState(namebtn2);
+    const [fade , setfade] = useState(1);
+  
     const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch=" + streamId;
-   
+    console.log('render');
+
     if (stream2Url !== undefined) {
-        secondVideoButton = <Button onClick={changeVideo} color="primary" block><FontAwesomeIcon icon="video"/> Switch to {name2} Camera</Button>
+        secondVideoButton = <Button onClick={changeVideo} color="primary" block><FontAwesomeIcon icon="video"/> Switch to {nameBtnstate} Camera</Button>
     }
 
-    function changeVideo() { 
-        setStreamId(stream2Url);
+    function changeVideo() {   
+        setfade(0);
+        setTimeout(() => {
+            setfade&&setfade(1);
+            setNameBtn&&nameBtnstate===namebtn2?(setNameBtn(namebtn1), setStreamId(stream2Url)):(setNameBtn(namebtn2),setStreamId(streamUrl));
+        }, 500);
     }
 
     const [serverFix, setserverFix] = useState(0);
     useEffect(() => {
         setserverFix(1);
-        streamUrl!=streamId&&setStreamId(streamUrl);
-    }, [streamUrl])
+        streamUrl!=streamId&&setStreamId(streamUrl); 
+        nameBtnstate!=namebtn2&&setNameBtn(namebtn2); 
+    }, [streamUrl ,namebtn1 ,namebtn2])
     return (
         <>
             {serverFix && i ? <div>
@@ -38,7 +47,7 @@ const ExhibitDetailPage = () => {
                         </div>
                         <Row>
                             <Col sm="12" md="7" xl="8">
-                                <div style={{marginBottom: 20}} id="stream" className="embed-responsive embed-responsive-16by9">
+                                <div style={{marginBottom: 20 , transition:500+'ms' ,opacity:fade}} id="stream" className="embed-responsive embed-responsive-16by9">
                                     <iframe src={videoUrl}
                                             title={`Live stream of the ${name} exhibit`}
                                             name="ls-player"
@@ -47,10 +56,8 @@ const ExhibitDetailPage = () => {
                                             frameBorder="0"
                                             webkitallowfullscreen="true"
                                             mozallowfullscreen="true"
-                                            allowFullScreen></iframe>
-                                     
-                                </div>
-                                <p>   {videoUrl}</p>
+                                            allowFullScreen></iframe> 
+                                </div> 
                             </Col>
                             <Col>
                                 <Row style={{justifyContent: 'center'}}>
