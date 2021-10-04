@@ -13,31 +13,27 @@ const ExhibitDetailPage = () => {
     const {namebtn1 , namebtn2, stream2Url} = i ? i : {};
     let secondVideoButton = '';
     const [streamId , setStreamId]=useState(streamUrl); 
-    const [nameBtnstate , setNameBtn] = useState(namebtn2);
-    const [fade , setfade] = useState(1);
-  
+    const [nameBtnstate , setNameBtn] = useState(namebtn2);  
     const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch=" + streamId; 
 
     if (stream2Url !== undefined) {
         secondVideoButton = <Button onClick={changeVideo} color="primary" block><FontAwesomeIcon icon="video"/> Switch to {nameBtnstate} Camera</Button>
     }
 
-    function changeVideo() {   
-        setfade(0);
-        setTimeout(() => {
-            setfade&&setfade(1);
-            if( nameBtnstate===namebtn2){
-                setNameBtn(namebtn1), setStreamId(stream2Url)
-            } else{
-                setNameBtn(namebtn2),setStreamId(streamUrl)
-            }   
-        }, 500);
+    function changeVideo() {    
+                if( nameBtnstate===namebtn2){
+                    setNameBtn(namebtn1), setStreamId(stream2Url)
+                } else{
+                    setNameBtn(namebtn2),setStreamId(streamUrl)
+                }    
     }
 
+        
+  
     const [serverFix, setserverFix] = useState(0);
     useEffect(() => {
         setserverFix(1);
-        streamUrl!=streamId&&setStreamId(streamUrl); 
+        streamUrl!==streamId&&setStreamId(streamUrl); 
         nameBtnstate!=namebtn2&&setNameBtn(namebtn2); 
     }, [streamUrl ,namebtn1 ,namebtn2])
     return (
@@ -50,7 +46,7 @@ const ExhibitDetailPage = () => {
                         </div>
                         <Row>
                             <Col sm="12" md="7" xl="8">
-                                <div style={{marginBottom: 20 , transition:500+'ms' ,opacity:fade}} id="stream" className="embed-responsive embed-responsive-16by9">
+                                <div style={{marginBottom: 20 , transition:500+'ms' }} id="stream" className="embed-responsive embed-responsive-16by9">
                                     <iframe src={videoUrl}
                                             title={`Live stream of the ${name} exhibit`}
                                             name="ls-player"
