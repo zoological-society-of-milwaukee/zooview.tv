@@ -12,21 +12,22 @@ const ExhibitDetailPage = () => {
     const {name, image, streamUrl, description, bg} = i ? i : {};
     const {name2, stream2Url} = i ? i : {};
     let secondVideoButton = '';
-    const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch=" + streamUrl;
-
+    const [streamId , setStreamId]=useState(streamUrl)
+    const videoUrl = "https://player.livespotting.com?alias=0ejpnnrt&ch=" + streamId;
+   
     if (stream2Url !== undefined) {
-        secondVideoButton = <Button href="" onClick={changeVideo} color="primary" block><FontAwesomeIcon icon="video"/> Switch to {name2} Camera</Button>
+        secondVideoButton = <Button onClick={changeVideo} color="primary" block><FontAwesomeIcon icon="video"/> Switch to {name2} Camera</Button>
     }
 
-    function changeVideo() {
-
-        alert('https://player.livespotting.com?alias=0ejpnnrt&ch=' + stream2Url);
+    function changeVideo() { 
+        setStreamId(stream2Url);
     }
 
     const [serverFix, setserverFix] = useState(0);
     useEffect(() => {
-        setserverFix(1)
-    }, [])
+        setserverFix(1);
+        streamUrl!=streamId&&setStreamId(streamUrl);
+    }, [streamUrl])
     return (
         <>
             {serverFix && i ? <div>
@@ -47,7 +48,9 @@ const ExhibitDetailPage = () => {
                                             webkitallowfullscreen="true"
                                             mozallowfullscreen="true"
                                             allowFullScreen></iframe>
+                                     
                                 </div>
+                                <p>   {videoUrl}</p>
                             </Col>
                             <Col>
                                 <Row style={{justifyContent: 'center'}}>
