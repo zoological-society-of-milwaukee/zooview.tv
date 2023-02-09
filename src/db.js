@@ -47,7 +47,7 @@ export const streams = [
         name: 'Jaguars',
         namebtn1:'Jaguars Outdoor',
         namebtn2: 'Jaguars Indoor',
-        description: `Though Jaguars are just the third biggest wild cat species, they’re the biggest cats native to the Americas. Mother Stella and son Francisco are staples of the Zoo’s Florence Mila Borchert Big Cat Country. `,
+        description: `Though Jaguars are just the third biggest wild cat species, they’re the biggest cats native to the Americas. See male jaguar, Francisco, enjoying his habitat in the Florence Mila Borchert Big Cat Country.`,
         image: imgJaguar,
         status: 'live',
         streamUrl: 'kerk35wt',
