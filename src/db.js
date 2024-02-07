@@ -75,15 +75,15 @@ export const streams = [
         status: 'live',
         themeColor: '#9e700d'
     }
-    //,
-    //{
-    //    id: 8,
-    //    slug: 'harbor-seals',
-    //    name: 'Harbor Seals',
-    //    description: `Watch as the seals swim in their pool and pop up for a quick breath or training session. Guests can see them throughout the year because their thick layer of blubber keeps them warm in the winter`,
-    //    image: imgSeals,
-    //    streamUrl: 'lcdry4k0',
-    //    status: 'live',
-    //    themeColor: '#336699'
-    //}
+    ,
+    {
+        id: 8,
+        slug: 'harbor-seals',
+        name: 'Harbor Seals',
+        description: `Watch as the seals swim in their pool and pop up for a quick breath or training session. Guests can see them throughout the year because their thick layer of blubber keeps them warm in the winter`,
+        image: imgSeals,
+        streamUrl: 'lcdry4k0',
+        status: 'live',
+        themeColor: '#336699'
+    }
 ];
