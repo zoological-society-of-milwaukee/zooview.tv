@@ -31,16 +31,16 @@ export const streams = [
         themeColor: '#709239',
         bg: '-80px'
     },
-    {
-        id: 3,
-        slug: 'humboldt-penguin',
-        name: 'Humboldt Penguins',
-        description: `Diving, splashing and waddling around, Humboldt penguins provide endless entertainment. Tune in mid-morning and mid-afternoon for a chance to watch one of their daily feedings.  `,
-        image: imgHumboldtPenguins,
-        streamUrl: 'j8tpt8et',
-        status: 'live',
-        themeColor: '#495c86'
-    },
+    //{
+    //    id: 3,
+    //    slug: 'humboldt-penguin',
+    //    name: 'Humboldt Penguins',
+    //    description: `Diving, splashing and waddling around, Humboldt penguins provide endless entertainment. Tune in mid-morning and mid-afternoon for a chance to watch one of their daily feedings.  `,
+    //    image: imgHumboldtPenguins,
+    //    streamUrl: 'j8tpt8et',
+    //    status: 'live',
+    //    themeColor: '#495c86'
+    //},
     {
         id: 5,
         slug: 'jaguar',
