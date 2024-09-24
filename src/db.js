@@ -6,6 +6,7 @@ import imgJaguar from './media/images/mke-zoo-jaguar.jpg';
 import imgLakeWisconsin from './media/images/mke-zoo-lake-wisconsin.jpg';
 import imgOrangutans from './media/images/mke-zoo-orangutans.jpg';
 import imgSeals from './media/images/mke-zoo-seal.jpg';
+import imgBearSeal from './media/images/mke-zoo-bear-seal.jpg';
 
 
 export const streams = [
@@ -79,8 +80,8 @@ export const streams = [
     {
         id: 8,
         slug: 'harbor-seals',
-        name: 'Harbor Seals',
-        description: `Watch as the seals swim in their pool and pop up for a quick breath or training session. Guests can see them throughout the year because their thick layer of blubber keeps them warm in the winter`,
+        name: 'Harbor Seals/Grizzly Bear',
+        description: `Watch as the seals swim in their pool and pop up for a quick breath or training session. Guests can see them throughout the year because their thick layer of blubber keeps them warm in the winter. Observe the powerful Grizzly Bears as they roam their habitat, foraging and playing in the water. Thanks to their dense fur and ability to slow their metabolism, they thrive in colder weather.`,
         image: imgSeals,
         streamUrl: 'lcdry4k0',
         status: 'live',
