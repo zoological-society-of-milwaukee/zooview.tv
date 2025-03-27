@@ -42,19 +42,19 @@ export const streams = [
         status: 'live',
         themeColor: '#495c86'
     },
-//    {
-//       id: 5,
-//        slug: 'jaguar',
-//        name: 'Jaguars',
-//        namebtn1:'Jaguars Outdoor',
-//        namebtn2: 'Jaguars Indoor',
-//        description: `Though Jaguars are just the third biggest wild cat species, they’re the biggest cats native to the Americas. See male jaguar, Francisco, enjoying his habitat in the Florence Mila Borchert Big Cat Country.`,
-//        image: imgJaguar,
-//        status: 'live',
-//        streamUrl: 'kerk35wt',
-//        stream2Url: 'm3imcz6w',
-//        themeColor: '#c7181e'
-//    },
+    {
+       id: 5,
+        slug: 'jaguar',
+        name: 'Jaguars',
+        namebtn1:'Jaguars Outdoor',
+        namebtn2: 'Jaguars Indoor',
+        description: `Though Jaguars are just the third biggest wild cat species, they’re the biggest cats native to the Americas. See male jaguar, Francisco, enjoying his habitat in the Florence Mila Borchert Big Cat Country.`,
+        image: imgJaguar,
+        status: 'live',
+        streamUrl: 'kerk35wt',
+        stream2Url: 'm3imcz6w',
+        themeColor: '#c7181e'
+    },
     {
         id: 6,
         slug: 'lake-wisconsin',
