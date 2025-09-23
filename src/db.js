@@ -1,11 +1,9 @@
 import imgAfricanLion from './media/images/mke-zoo-african-lion-hyena.jpg';
 import imgAmurTiger from './media/images/mke-zoo-amur-tiger.jpg';
 import imgHumboldtPenguins from './media/images/mke-zoo-humboldt-penguins.jpg';
-// import imgHyenas from './media/images/mke-zoo-hyenas.png';
 import imgJaguar from './media/images/mke-zoo-jaguar.jpg';
 import imgLakeWisconsin from './media/images/mke-zoo-lake-wisconsin.jpg';
 import imgOrangutans from './media/images/mke-zoo-orangutans.jpg';
-// import imgSeals from './media/images/mke-zoo-seal.jpg';
 import imgBearSeal from './media/images/mke-zoo-bear-seal.jpg';
 
 
@@ -46,13 +44,10 @@ export const streams = [
        id: 5,
         slug: 'jaguar',
         name: 'Jaguars',
-        namebtn1:'Jaguars Outdoor',
-        namebtn2: 'Jaguars Indoor',
         description: `Though Jaguars are just the third biggest wild cat species, they’re the biggest cats native to the Americas. See male jaguar, Francisco, enjoying his habitat in the Florence Mila Borchert Big Cat Country.`,
         image: imgJaguar,
         status: 'live',
         streamUrl: 'kerk35wt',
-        stream2Url: 'm3imcz6w',
         themeColor: '#c7181e'
     },
     {
@@ -66,17 +61,17 @@ export const streams = [
         themeColor: '#844070',
         bg: '-70px'
     },
-    {
-        id: 7,
-        slug: 'orangutans',
-        name: 'Orangutans',
-        description: `The Milwaukee Zoo is home to two orangutans, Tommy and Alex. Both enjoy eating veggies and fruit, playing with craft paper and taking afternoon naps. Tune in to see what they’re up to today`,
-        image: imgOrangutans,
-        streamUrl: 'pxd2c11u',
-        status: 'live',
-        themeColor: '#9e700d'
-    }
-    ,
+    //{
+    //    id: 7,
+    //    slug: 'orangutans',
+    //    name: 'Orangutans',
+    //    description: `The Milwaukee Zoo is home to two orangutans, Tommy and Alex. Both enjoy eating veggies and fruit, playing with craft paper and taking afternoon naps. Tune in to see what they’re up to today`,
+    //    image: imgOrangutans,
+    //    streamUrl: 'pxd2c11u',
+    //    status: 'live',
+    //    themeColor: '#9e700d'
+    //}
+    //,
     {
         id: 8,
         slug: 'harbor-seals-grizzly-bear',
