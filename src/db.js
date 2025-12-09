@@ -40,7 +40,7 @@ export const streams = [
         status: 'live',
         themeColor: '#495c86'
     },
-    {
+/*    {
        id: 5,
         slug: 'jaguar',
         name: 'Jaguars',
@@ -49,7 +49,7 @@ export const streams = [
         status: 'live',
         streamUrl: 'kerk35wt',
         themeColor: '#c7181e'
-    },
+    },*/
     {
         id: 6,
         slug: 'lake-wisconsin',
